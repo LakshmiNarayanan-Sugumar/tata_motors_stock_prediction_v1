@@ -1,5 +1,6 @@
 import requests
 import csv
+import os
 
 def fetch_tata_motors_news(api_key):
     query = "Tata Motors"
@@ -29,7 +30,6 @@ def fetch_tata_motors_news(api_key):
     else:
         print(f"Error: {response.status_code}, {response.json()}")
 
-# Replace with your API key
-api_key = '3111512a345945a0acdf47c8af27e10c'
+# Load API key from environment variable
+api_key = os.environ.get("NEWS_API_KEY", "your_api_key_here")
 fetch_tata_motors_news(api_key)
-

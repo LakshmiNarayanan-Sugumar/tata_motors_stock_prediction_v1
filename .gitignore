@@ -1,0 +1,7 @@
+__pycache__/
+.env
+*.pyc
+tata_motors_news.csv
+tata_motors_stock_data.csv
+test_api.py
+ml_env/

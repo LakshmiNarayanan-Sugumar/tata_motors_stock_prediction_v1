@@ -71,6 +71,7 @@ plt.xlabel('Actual Close Prices')
 plt.ylabel('Predicted Close Prices')
 plt.title('Actual vs Predicted Stock Prices')
 plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red')
+plt.savefig("actual_vs_predicted.png")
 plt.show()
 
 # Residual Plot for Error Analysis
@@ -80,6 +81,7 @@ plt.xlabel('Actual Close Prices')
 plt.ylabel('Residuals (Actual - Predicted)')
 plt.title('Residual Plot')
 plt.axhline(y=0, color='red', linestyle='--')
+plt.savefig("residual_plot.png")
 plt.show()
 
 # Conclusion based on R2 Score

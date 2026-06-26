@@ -37,6 +37,7 @@ plt.figure(figsize=(10, 8))
 corr_matrix = merged_data[['Title Sentiment', 'Description Sentiment', 'Close', 'High', 'Low']].corr()
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 plt.title('Sentiment vs. Stock Price Correlation Heatmap - Tata Motors')
+plt.savefig('sentiment_vs_stock_correlation.png', bbox_inches='tight')  # ← add this
 plt.show()
 
 # Plot scatter plots
@@ -45,6 +46,7 @@ sns.scatterplot(x='Title Sentiment', y='Close', data=merged_data)
 plt.title('Title Sentiment vs Stock Close Price')
 plt.xlabel('Title Sentiment')
 plt.ylabel('Stock Close Price')
+plt.savefig('title_sentiment_vs_close.png', bbox_inches='tight')  # ← add this
 plt.show()
 
 plt.figure(figsize=(10, 6))
@@ -52,4 +54,5 @@ sns.scatterplot(x='Description Sentiment', y='Close', data=merged_data)
 plt.title('Description Sentiment vs Stock Close Price')
 plt.xlabel('Description Sentiment')
 plt.ylabel('Stock Close Price')
+plt.savefig('description_sentiment_vs_close.png', bbox_inches='tight')  # ← add this
 plt.show()
