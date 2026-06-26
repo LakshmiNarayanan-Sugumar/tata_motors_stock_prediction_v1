@@ -4,6 +4,8 @@ Predicting Tata Motors stock prices using news sentiment and linear regression. 
 
 **Paper:** [Stock Price Prediction for Tata Motors Using News Sentiment and Linear Regression](https://www.techrxiv.org/doi/full/10.36227/techrxiv.175423908.89189368) — TechRxiv, August 2025
 
+> Note: The GitHub code has been updated since the paper was written to fix data leakage and use a proper time-based train/test split. The paper reflects the original methodology.
+
 ---
 
 ## What it does
@@ -19,9 +21,9 @@ Predicting Tata Motors stock prices using news sentiment and linear regression. 
 
 | Metric | Value |
 |--------|-------|
-| MAE | 2.57 |
-| MSE | 7.12 |
-| R² | 0.977 |
+| MAE | 1.54 |
+| MSE | 9.88 |
+| R² | 0.833 |
 
 ## Visualizations
 
